@@ -5,7 +5,7 @@
       <h1 class="title">Cerca un post</h1>
       <input
         type="text"
-        placeholder="Search"
+        placeholder="Inserisci una parola da cercare"
         v-model="search"
         @keyup.enter="cerca"
         minlength="3"
@@ -32,9 +32,9 @@
     </div>
     <!-- if items empity  -->
     <div  v-if="items.length == 0 && nessunPost" class="col-sm-12 col-md-12 col-lg-12 ">
-      <div class="text-center card">
-        <h2 class="m-3">
-          <i class="fa-solid fa-user"></i>
+      <div class="d-flex flex-column justify-content-center align-items-center card">
+        <h2 class="m-3 ">
+          <i class="fa-solid fa-xmark"></i>
           Nessun post trovato 
         </h2>
       </div>
